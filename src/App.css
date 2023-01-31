@@ -1,0 +1,138 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,700;1,300;1,400;1,500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App{
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #cbd5e1;
+}
+.container{
+  padding-top: 3rem;
+}
+.todo{
+  /* border: 2px solid #545d67; */
+  width: 60vw;
+  margin: auto;
+  display: block;
+  background-color: #e2e8f0;
+  margin-top: 3rem;
+  font-family: 'Ubuntu', sans-serif;
+  margin-top:0;
+  box-shadow: 0 0 10px;
+}
+
+h1{
+  text-align: center;
+  color: #8f949c;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.input{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.input input{
+  width: 60%;
+  height: 5vh;
+  background-color: #cbd5e1;
+  color: #545d67;
+  font-size: 1.5rem;
+  outline: #64748b
+}
+button{
+  padding: 0rem 1rem;
+  background-color: #cbd5e1;
+  color: #8f949c;
+  cursor: pointer;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  font-family: 'Ubuntu', sans-serif;
+  border: 1px solid #545d67 ;
+  font-weight: 300;
+}
+
+button:hover{
+  background-color: #e2e8f0;
+}
+
+.message{
+  /* background-color: #cbd5e1; */
+  display: block;
+  width: 30vw;
+  margin: 1rem auto;
+  border-radius: 1rem;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.para{
+  font-size: 1rem;
+  font-weight: bold;
+  color: #545d67;
+  
+}
+
+.output{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  margin-top: 2rem;
+  font-family: 'Ubuntu', sans-serif;
+  border-top: 2px solid #64748b;
+ 
+}
+
+.result{
+  max-width: 100%;
+  display: flex;
+  margin: 1rem 0;
+  gap: 1rem;
+ 
+}
+.text{
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+  background-color: #cbd5e1;
+  border-radius: 0.5rem;
+  color: #8f949c;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 0.6rem;
+}
+
+.remove{
+  display: flex;
+  justify-content: center;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+/* Responsive css */
+
+
+@media only screen and (max-width: 450px) {
+
+  .result{
+    flex-direction: column;
+  }
+
+  .input{
+    flex-direction: column;
+  }
+  .input input{
+    width: 100%;}
+
+}
