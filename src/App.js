@@ -1,6 +1,6 @@
 
 import './App.css';
-import Todo from './Todo';
+import Todo from './component/Todo';
 
 
 function App() {
@@ -8,9 +8,9 @@ function App() {
     <div className="App">
 
       <div className="container">
-      <Todo/>
+        <Todo />
       </div>
-      
+
     </div>
   );
 }
